@@ -62,7 +62,7 @@ export const getServerSideProps = async ({ params }) => {
   const globalData = getGlobalData();
   const posts = await getPostBySlug(params.id);
  
-
+  console.log(posts);
   return {
     props: {
       globalData,
